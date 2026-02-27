@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production
+client/dist/
+
+# Environment Variables
+.env
+.env.local
+
+# IDE and System Files
+.vscode/
+.idea/
+.DS_Store
+*.log
+
+# AI/Agent Data
+.gemini/
+brain/
