@@ -1,15 +1,18 @@
 {
-    "name": "skillmatch-india",
-    "version": "1.0.0",
-    "description": "AI-Powered Smart Job Portal",
-    "scripts": {
-        "start": "concurrently \"npm run server\" \"npm run client\"",
-        "server": "cd server && npm start",
-        "client": "cd client && npm run dev",
-        "build": "npm install --prefix client && npm run build --prefix client",
-        "install-all": "npm install && cd server && npm install && cd ../client && npm install"
-    },
-    "devDependencies": {
-        "concurrently": "^8.2.2"
-    }
+  "name": "skillmatch-india",
+  "version": "1.0.0",
+  "description": "AI-Powered Smart Job Portal",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "build": "npm install --prefix client && npm run build --prefix client",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "wrangler": "^4.69.0"
+  }
 }
