@@ -19,3 +19,9 @@ client/dist/
 # AI/Agent Data
 .gemini/
 brain/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
